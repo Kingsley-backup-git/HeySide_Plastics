@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import "tailwindcss";
+*, *::after, *::before {
+box-sizing: border-box;
+}
+@theme inline {
+  --font-* : initial;
+  --font-inter :"Inter", sans-serif;
+  --color-darkgreen : #A0EF22;
+  --background-image-sectionOne : url('/background.jpg');
+}
+
+
+@utility scrollbar-hidden {
+  &::-webkit-scrollbar {
+    display:none
+  }
+}
+
+body{
+  font-family: var(--font-inter);
+}
+
+@utility header {
+font-size:clamp(2.2rem, 4vw, 6rem);
+line-height : clamp(40px, 5vw, 100px)
+}
+
+
+
+
+
